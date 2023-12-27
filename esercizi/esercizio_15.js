@@ -8,4 +8,4 @@ let average = 0;
 for (let i = _; i < _; _) {
     _
 }
-console.log('Esercizio 15', average);
+console.log('Esercizio 15', average / numbers.length);

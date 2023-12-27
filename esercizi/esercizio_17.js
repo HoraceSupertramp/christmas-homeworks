@@ -1,16 +1,17 @@
 
 /***
- * Completare il codice in modo che console.log() stampi in console
- * una griglia quadrata di cancelletti (#) di lato lungo quanto un numero preso da tastiera.
- * Esempio: Se da tastiera viene digitato il numero 3, console.log() stampa a video la stringa:
- *    ###
- *    ###
- *    ###
- * Nota: il carattere "a capo" si scrive "\n". Esempio: console.log("\n") stampa una riga
- * vuota che va subito a capo.
+ * Completare il codice in modo che console.log() stampi il numero di valori distinti
+ * contenuti nell'array (riempito dall'utente)
  */
 
-const numero = parseInt(prompt("Scrivi un numero"));
-let grid = '';
+const valori = [];
+let valore;
+do {
+    valore = prompt("Inserisci qualcosa nell'array (zero per terminare)");
+    if (valore != 0) {
+        valori.push(valore);
+    }
+} while (valore != 0);
+let numeriDistinti = 0;
 _
-console.log(grid);
+console.log(numeriDistinti);
